@@ -1,0 +1,62 @@
+id: yahtzee
+title: Yahtzee
+publisher: Hasbro
+edition: "C2406 (2016)"
+players: {min: 2}
+ages: 8
+components: [5 dice, shaker, score cards]
+sources:
+  - url: https://consumercare.hasbro.com/api/download/C2406_en-us_yahtzee.pdf
+    kind: official
+    retrieved: 2026-10-03
+
+summary: >
+  Roll five dice up to three times a turn to make combinations, and fill one
+  of 13 boxes on your score card each turn. Highest grand total wins.
+
+setup:
+  - Each player rolls one die; the highest roll goes first. Play goes clockwise.
+  - Write each player's name on the score card in turn order.
+
+turn:
+  - Roll all five dice.
+  - You may set aside any dice and re-roll the rest, up to two more times. Set-aside
+    dice may be re-rolled later in the turn.
+  - After your last roll (or sooner) fill exactly one empty box. If nothing fits,
+    you must enter a zero in an empty box.
+  - A filled box can never be changed.
+
+scoring:
+  upper:
+    - "Ones through Sixes: the sum of the dice showing that number."
+    - "Bonus: 35 points if the upper section totals 63 or more."
+  lower:
+    - "Three of a Kind: at least three matching dice; score the total of all five dice."
+    - "Four of a Kind: at least four matching dice; score the total of all five dice."
+    - "Full House: three of one number and two of another; 25 points."
+    - "Small Straight: four dice in sequence; 30 points."
+    - "Large Straight: five dice in sequence; 40 points."
+    - "Yahtzee: all five dice the same; 50 points."
+    - "Chance: any roll; score the total of all five dice."
+  extra_yahtzees:
+    - "Each further Yahtzee earns a 100-point bonus, but only if the Yahtzee box already holds 50."
+    - "You still fill a box with the roll: the matching upper box if it is empty."
+    - "If that box is filled, use Three of a Kind or Four of a Kind (scoring the dice total)."
+    - "If those are filled too, use Chance or any other open lower box at its full value
+       (for example Full House scores 25)."
+    - "If the Yahtzee box holds a zero, there is no bonus, but the same placement order applies."
+
+end:
+  type: fixed-turns
+  turns: 13
+winning: Highest grand total (upper + bonus + lower + Yahtzee bonuses) after 13 turns.
+
+clarifications:
+  - q: Does five of a kind count as a Full House?
+    a: Only as an extra Yahtzee placed under the rules above; otherwise no.
+  - q: Is 1-2-3-4-6 a Large Straight?
+    a: No, it is a Small Straight (four in sequence).
+
+editions:
+  - "Older printings let an extra Yahtzee go in any open lower box once its upper box is
+     filled, without trying Three/Four of a Kind first. Agree which you play."

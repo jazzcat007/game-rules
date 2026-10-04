@@ -1,0 +1,91 @@
+id: finders-creepers
+title: Finders Creepers
+publisher: MGA Games
+edition: "First edition (2024)"
+players: {min: 2, max: 4}
+ages: 8
+playtime_minutes: 30-45
+components: [game board, 4 hunter figurines, 3 monster dice, 42 gear tiles,
+  6 haunted object tiles, 4 holy object tiles, 2 monster guide boards,
+  12 monster tombstone tiles, 12 monster portrait cards, 8 run chips, 8 gear chips,
+  12 grand escape cards (non-digital play only)]
+sources:
+  - url: https://cdn.shopify.com/s/files/1/0272/0202/7618/files/FindersCreepers_GuideBook-compressed.pdf
+    kind: official
+    retrieved: 2026-10-03
+    note: Linked from shop.mgae.com. Scanned pages with no text layer.
+
+summary: >
+  Monster hunters move through a 12-room haunted house collecting the three
+  pieces of gear each monster needs, then try to catch it in the room where
+  they think it is hiding. The Boogle companion app hides the monsters;
+  a non-digital variant uses face-down tiles instead.
+
+setup:
+  - Put the board out; the house has 12 rooms (the graveyard counts as a room).
+    Place the two Monster Guide Boards beside it, with the tombstone tiles and
+    portrait cards on their matching monsters.
+  - Each player puts a hunter on the Entrance Gate.
+  - Set 4 of the 6 haunted object tiles aside as a stack next to the guide boards.
+  - Shuffle 36 gear tiles face down into 12 stacks of 3.
+  - Shuffle the other 6 gear, 2 haunted and 4 holy object tiles face down and put
+    one under each stack. Place one stack in each room at random.
+  - With the app, everyone scans the board and memorises where the monsters hide.
+  - The last person to see a ghost goes first (otherwise the oldest). Play goes
+    counterclockwise.
+
+turn:
+  - Take 3 actions, in any order, repeating any of them.
+  - "Move: to an adjacent room along the arrows (the Entrance Gate counts). You
+     cannot enter a room with a face-up haunted object unless you hold a holy object."
+  - "Search: flip your room's stack face up. If the room is empty, add 4 tiles
+     from the discard pile (as many as there are). If you reveal a haunted object
+     and end your turn there, you go back to the Entrance Gate."
+  - "Collect: take a face-up gear or holy object, or the top tile of the stack.
+     You hold at most 4; when full you may swap one."
+  - "Catch: with the monster's 3 gear, name the monster, discard the gear and use
+     the app on your room. If right, take its tombstone; if wrong, the gear is lost."
+  - "Scan: the app shows the monsters in your room and the adjacent rooms."
+  - "Expel: move a face-up haunted object to an adjacent room (not the Entrance Gate).
+     A hunter in the room it lands in goes back to the Gate at the end of your turn.
+     You do not need to be next to it."
+  - "Special action: spend a Run chip (move to any room) or a Gear chip (take any
+     face-up gear or holy object from any room, or swap if your inventory is full)."
+  - "Then roll the 3 monster dice (each has 2 icons and 4 blanks). The green die
+     resolves first."
+
+dice:
+  - "Run chip: gain one (hold at most 2)."
+  - "Gear chip: gain one (hold at most 2)."
+  - "Shuffle monsters: the app moves every monster to a new room."
+  - "Discard item: discard one tile from your inventory."
+  - "Haunted object: add one from the side stack to your room; you go back to the Gate."
+  - "Grand Escape: see below; it cancels the other dice."
+  - "A holy object can be discarded to cancel one die result on anyone's turn."
+
+grand_escape:
+  - "Triggered by the Grand Escape die face, or when three haunted objects are face up
+     on the board at once."
+  - "With the app, everyone hunts the escaped monsters around the real house. Whoever
+     blasts the most takes up to two face-up gear tiles (or the tops of stacks), and
+     returns one haunted object from the board to the side stack."
+  - "The current turn ends and the next player starts without rolling the dice."
+
+end:
+  type: target
+  target: 3
+  counts: monsters captured
+winning: The first hunter to capture 3 monsters wins.
+
+variants:
+  - name: Non-digital
+    rules:
+      - "Shuffle the tombstone tiles and put one face up in each room. Everyone looks
+         for 30 seconds, then flip them face down."
+      - "Catch: flip the tile in your room; keep it if right, flip it back if wrong."
+      - "Scan: privately peek at the tiles in your room and the adjacent rooms."
+      - "Shuffle monsters: gather the remaining tiles, shuffle, and deal them out
+         face up again, then 30 seconds to look and flip them down."
+      - "Grand Escape: before play, players split the 12 Grand Escape cards and hide
+         them in agreed rooms of the real house. On a Grand Escape everyone searches;
+         the first to call out a find wins it. You cannot claim a card you hid."

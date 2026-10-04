@@ -1,0 +1,73 @@
+id: drop-trivia
+title: Drop Trivia (presented by Trivial Pursuit)
+publisher: Hasbro
+edition: "F9833 (2024)"
+players: {min: 2, teams: 2}
+ages: 13
+playtime_minutes: 15
+components: [electronic tower, 6 pucks, 60 double-sided cards]
+sources:
+  - url: https://instructions.hasbro.com/api/download/F9833_en-us_drop-trivia-game-electronic-party-game-with-voice-and-sounds-board-games-for-2-or-more-players-ages-13.pdf
+    kind: official
+    retrieved: 2026-10-03
+
+summary: >
+  Two teams race the clock to put six answers on a trivia card into the right
+  order by dropping pucks into an electronic tower, which times, checks and
+  scores every turn.
+
+setup:
+  - Split into two teams on opposite sides of the table.
+  - Switch the tower on, stand it on its kickstand where both teams can reach it.
+  - Shuffle the cards and put them and the pucks by the tower.
+
+round:
+  - Press START. A game is 4 rounds; the tower says which team goes first, and
+    this alternates each round.
+  - Put a card in the top slot. Read out the topic, the top and bottom labels
+    (for example Most and Fewest) and the six answers. The correct order is on the
+    back; do not look.
+  - Enter the card's code by dropping the four pucks shown on it, from the left,
+    then release them.
+  - "Turn 1: first team, 60 seconds. Turn 2: other team, 45 seconds. Turn 3: first
+     team again, 30 seconds. The round ends early if a team gets everything right."
+
+turn:
+  - Press START and wait for "3, 2, 1, GO!" before touching the pucks.
+  - Drop the pucks in the order you think is right; the bottom label goes in first.
+    A dropped puck stays where it is.
+  - The tower checks each spot from the top. A ding means right, a buzz means wrong
+    or empty.
+  - Release the pucks, press START, and pass them (shuffled) to the other team.
+
+scoring:
+  - "1 point for each answer in the right spot, but only the first time either team
+     gets that answer right."
+  - Wrong answers never lose points.
+  - Scores add up across all rounds.
+
+fouls:
+  - Dropping a puck before GO forfeits the turn.
+  - Removing a puck, or releasing the pucks during your turn, forfeits the turn.
+  - If the tower registers a hovering puck, that puck must be dropped.
+
+end:
+  type: rounds
+  rounds: 4
+winning: The team with the most points after 4 rounds; a tie is shared (or play again).
+
+variants:
+  - name: Solo or cooperative
+    rules:
+      - Hold START for 3 seconds after switching on.
+      - 3 rounds instead of 4; a perfect game is 18 points.
+
+clarifications:
+  - q: Wrong card code?
+    a: Before turn 1, hold START for 3 seconds, release the pucks and re-enter it. After that, restart the game.
+  - q: Missed the result sounds?
+    a: Before releasing the pucks, hold START for 3 seconds to hear them again (once, on your own turn).
+  - q: Tower went quiet?
+    a: It sleeps after 5 minutes; press START to resume where you left off.
+  - q: Restart?
+    a: Switch off and on. Only the whole game restarts, not a round or turn.
