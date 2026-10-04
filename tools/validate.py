@@ -8,11 +8,14 @@ Exits 1 and prints one line per problem if anything is wrong.
 from __future__ import annotations
 
 import datetime
+import json
 import re
 import sys
 from pathlib import Path
 
 import yaml
+
+import build_index
 
 ROOT = Path(__file__).resolve().parent.parent
 REQUIRED = ('id', 'title', 'publisher', 'players', 'sources', 'summary', 'end', 'winning')
@@ -70,12 +73,32 @@ def check(path: Path) -> list[str]:
     return problems
 
 
+def check_index() -> list[str]:
+    """games/index.json is what a consumer like Ziggy fetches for a cheap
+    'what games do you know' listing; it must match the per-game files."""
+    index_path = ROOT / 'games' / 'index.json'
+    if not index_path.exists():
+        return ['games/index.json is missing; run tools/build_index.py']
+    try:
+        committed = json.loads(index_path.read_text(encoding='utf-8'))
+    except json.JSONDecodeError as exc:
+        return [f'games/index.json is not valid JSON: {exc}']
+    if committed != build_index.build():
+        return ['games/index.json is stale; run tools/build_index.py and commit the result']
+    return []
+
+
 def main(argv: list[str]) -> int:
+    explicit = bool(argv)
     paths = [Path(a) for a in argv] or sorted((ROOT / 'games').glob('*.yaml'))
     failed = 0
     for path in paths:
         for problem in check(path):
             print(f'{path.name}: {problem}')
+            failed += 1
+    if not explicit:
+        for problem in check_index():
+            print(problem)
             failed += 1
     if not failed:
         print(f'{len(paths)} game file(s) OK')

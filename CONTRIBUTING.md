@@ -16,7 +16,9 @@
    `clarifications` and leave it for the table to decide.
 6. **Keep steps short.** Each step should make sense on its own when read
    aloud.
-7. **Validate before you open a pull request:** `python tools/validate.py`.
+7. **Rebuild the index:** `python tools/build_index.py` and include the
+   updated `games/index.json` in your commit.
+8. **Validate before you open a pull request:** `python tools/validate.py`.
 
 By contributing, you agree to license your rules text under CC BY 4.0 and
 any code under MIT.

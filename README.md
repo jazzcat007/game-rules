@@ -48,12 +48,24 @@ and `editions` (where printings differ). Each section is a list of short
 steps or a mapping of lists. Use whatever sections fit the game, and write
 each step so it makes sense on its own when read aloud.
 
+## games/index.json
+
+A generated summary (id, title, publisher, players, end) of every game, for
+a consumer that just wants to know what's available without fetching every
+file. Rebuild it after adding or editing a game:
+
+```bash
+python tools/build_index.py
+```
+
+`validate.py` fails if it's out of date.
+
 ## Checking a file
 
 ```bash
 pip install pyyaml
-python tools/validate.py            # all games
-python tools/validate.py games/yahtzee.yaml
+python tools/validate.py            # all games, plus the index
+python tools/validate.py games/yahtzee.yaml   # one file only, no index check
 ```
 
 CI runs the same check on every push and pull request.

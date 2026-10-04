@@ -1,0 +1,55 @@
+[
+  {
+    "id": "drop-trivia",
+    "title": "Drop Trivia (presented by Trivial Pursuit)",
+    "publisher": "Hasbro",
+    "players": {
+      "min": 2,
+      "teams": 2
+    },
+    "end": {
+      "type": "rounds",
+      "rounds": 4
+    }
+  },
+  {
+    "id": "finders-creepers",
+    "title": "Finders Creepers",
+    "publisher": "MGA Games",
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "end": {
+      "type": "target",
+      "target": 3,
+      "counts": "monsters captured"
+    }
+  },
+  {
+    "id": "uno-express",
+    "title": "UNO Express",
+    "publisher": "Mattel",
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "end": {
+      "type": "target",
+      "target": 250,
+      "counts": "cumulative points across rounds"
+    }
+  },
+  {
+    "id": "yahtzee",
+    "title": "Yahtzee",
+    "publisher": "Hasbro",
+    "players": {
+      "min": 2
+    },
+    "end": {
+      "type": "fixed-turns",
+      "turns": 13
+    }
+  }
+]
