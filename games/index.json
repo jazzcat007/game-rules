@@ -27,6 +27,18 @@
     }
   },
   {
+    "id": "horrified-dungeons-and-dragons",
+    "title": "Horrified: Dungeons & Dragons",
+    "publisher": "Ravensburger",
+    "players": {
+      "min": 1,
+      "max": 5
+    },
+    "end": {
+      "type": "condition"
+    }
+  },
+  {
     "id": "uno-express",
     "title": "UNO Express",
     "publisher": "Mattel",

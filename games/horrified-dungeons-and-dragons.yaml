@@ -1,0 +1,164 @@
+id: horrified-dungeons-and-dragons
+title: "Horrified: Dungeons & Dragons"
+publisher: Ravensburger
+edition: "First edition, German printing DE01 (2025); rules and components match the English release"
+players: {min: 1, max: 5}
+ages: 10
+playtime_minutes: 60
+components: [double-sided game board (Waterdeep / Undermountain), 4 monster boards,
+  4 monster figures, 5 hero tiles, 5 hero standees, 5 hero reference cards,
+  10 citizen standees, 60 action/item tokens, 20 monster tokens, a frenzy marker,
+  a terror marker, 30 monster cards, a 20-sided die, 3 monster dice,
+  a perk card deck, a cloth bag]
+sources:
+  - url: https://product-files.ravensburger.cloud/manuals/693794.pdf
+    kind: official
+    retrieved: 2026-10-04
+    note: >
+      German-language rulebook (Spielanleitung, DE01). The English rulebook
+      page was unreachable (Cloudflare) when checked; this file was written
+      in English from the German PDF, which a German speaker can verify
+      against. Monster and hero names are translated, not official English
+      wording -- confirm exact English terms against the box if it matters.
+
+summary: >
+  A cooperative game: everyone wins or loses together. Heroes from the
+  Forgotten Realms roam Waterdeep (or, on the board's other side,
+  Undermountain beneath it) gathering items, guiding ordinary citizens to
+  safety, and working out each monster's unique way of being weakened and
+  then defeated, before terror overruns the city or time runs out.
+
+setup:
+  - Lay out the board and look over its locations.
+  - Shuffle the 4 hideout tiles face down onto the 4 locations marked for
+    them (Skull Island, Dragon's Perch, Obelisk of the Eye, Abandoned Camp
+    on the Waterdeep side; the board's other side has its own markers).
+  - Put the terror marker on space 0 of the terror track at the board's edge.
+  - Set the 10 citizen standees aside next to the board.
+  - Shuffle the monster card deck and place it face down beside the board.
+  - Agree which monsters to play against; put their monster boards out,
+    ordered by frenzy value from low (bottom) to high (top). Set up each
+    monster as its board's back side describes, and return unused monster
+    material to the box.
+  - Put the frenzy marker on the monster board with the lowest frenzy value.
+  - "Each player picks a hero, takes its tile, standee and reference card, and
+     starts on the location shown on its tile. Return the rest to the box."
+  - Shuffle the perk card deck; each player draws one card, and the rest form
+    a face-down deck beside the board.
+  - Put all 60 item tokens in the bag, shake it, draw 12 at random and place
+    each at the location printed on it. Keep the bag beside the board.
+  - "First game: play against the Displacer Beast and the Beholder. More
+     experience: the Red Dragon (which needs two different challenges to
+     defeat) plus any other monster."
+  - "Solo play: start the terror marker on space 3 instead of 0."
+
+turn:
+  - "1. Hero Phase: the active hero takes 4 actions, in any order, repeating
+     any of them:"
+  - "Move to an adjacent location, bringing along any number of citizens."
+  - "Guide a citizen to or from an adjacent location."
+  - "Take any number of items from your location."
+  - "Trade any number of items with any heroes sharing your location."
+  - "Weaken a monster by using an item at the location its board specifies."
+  - "Defeat a monster by following the unique steps on its board."
+  - "A hero's special action, as printed on their hero tile."
+  - "Reveal a hideout tile if you are at its location."
+  - "Any player may play any number of perk cards during any hero's Hero
+     Phase -- playing one costs no action. You start with one and gain
+     another by guiding a citizen to safety, or by rolling a natural 20 (or
+     higher, after bonuses) on the 20-sided die."
+  - "2. Monster Phase: the active player draws the top monster card and
+     resolves it top to bottom, then discards it face up."
+
+monster_phase:
+  - "Items: draw the number of item tokens shown at the top right of the card
+     from the bag, and place each at the location printed on it. If the bag
+     runs dry mid-draw, tip the items you just placed back in, reshuffle,
+     and keep drawing until you've drawn the full number."
+  - "Event: read it aloud and carry it out. If it names a monster's color
+     that isn't in your game, ignore it and move on to the monster attack."
+  - "Monster attack: starting at the left of the attack row, resolve each
+     symbol in turn. A symbol activates either the frenzied monster or every
+     monster matching that color/shape, by the row's own rule -- a monster
+     can move and attack more than once in a turn this way. Roll that
+     monster's dice (count and look shown on its board): an exclamation mark
+     triggers its unique Power once; a hit symbol scores 1 hit on its
+     target, if the target is still at the monster's location; a blank
+     face misses."
+  - "A hero hit by a monster may discard one item per hit to avoid it. Unable
+     or unwilling to discard enough: the hero is defeated -- remove the
+     standee, advance the terror marker 1 space, and the hero returns next
+     turn to the Gaping Portal: Taproom with a full set of actions, keeping
+     all perks and items. A citizen hit is defeated outright: remove it and
+     advance the terror marker 1 space. Items cannot save a citizen."
+
+items_and_hideouts:
+  - "Each item has a color/shape and a strength (1-3). A monster's weaken and
+     defeat steps, and a hideout, name a color (or 'any color') and a total
+     strength; add up the strengths of matching items to meet or beat it."
+  - "A hideout is revealed by moving to its location and discarding items of
+     any color totaling strength 3 or more. Once revealed it stays that way
+     for the rest of the game, even if its monster isn't in play."
+
+frenzy:
+  - "Whenever a monster card shows the frenzy symbol, the frenzied monster
+     moves and may attack (possibly moving and attacking twice in one turn
+     if another symbol also matches it)."
+  - "Some events move the frenzy marker to the monster board with the next
+     higher frenzy value, wrapping back to the lowest if there is none
+     higher. If no other monster is left in play, leave it where it is."
+  - "Defeating a monster: remove it from the board, ignore its events and
+     attacks for the rest of the game, discard any items on its board, and
+     return its other pieces to the box. If the frenzy marker was on its
+     board, advance it as above."
+
+end:
+  type: condition
+winning: >
+  Defeat every monster in play and you win together. You lose if the terror
+  marker reaches the last space of the track (the monsters have overrun the
+  city), or if you need to draw a monster card and the deck is empty (you
+  ran out of time).
+
+monsters:
+  - name: "Beholder (Betrachter)"
+    notes: >
+      Weaken by damaging its ten eyestalks: place any item at its location
+      and roll the 20-sided die against the Beholder's eyestalk reference
+      card to see how many you damage. Defeat by blinding its central
+      antimagic eye once every eyestalk is damaged.
+  - name: "Displacer Beast (Täuschungsbestie)"
+    notes: >
+      Place items at its location on numbered, face-down spaces (each
+      item's strength must match the space's number) until at least 5 are
+      placed, then try to defeat it by guessing which space is really the
+      beast and rolling well enough on the 20-sided die.
+  - name: "Mimic (Mimik)"
+    notes: >
+      Weaken by placing an item at its location, then roll the 20-sided die:
+      a poor roll damages nothing, a mid roll damages the item, a high roll
+      lets you recover it and draw a perk card. Defeat once it's damaged
+      enough.
+  - name: "Red Dragon (Roter Drache)"
+    notes: >
+      High complexity; no hideout. Needs two different challenges: first
+      unravel the Vault of the Orb of Dragonkind by placing items to shift
+      matching-colored obstacle tiles until the orb can be collected, then
+      use the orb against the dragon itself to defeat it.
+
+variants:
+  - name: Solo play
+    rules:
+      - Start the terror marker on space 3 of the track instead of 0.
+
+clarifications:
+  - q: Can a defeated hero be saved by discarding items, like a citizen hit?
+    a: >
+      No -- that trade only applies to a hero's own hits. A citizen that
+      takes a hit is defeated outright; items can't save it.
+  - q: Does the frenzied monster using a Power roll of 20 still award a perk
+      card, if its own text would normally give one?
+    a: >
+      For the Beholder specifically, no: a roll of 20 on its own Power
+      attack does not hand out a perk card, even though other good rolls on
+      its weaken step do.
