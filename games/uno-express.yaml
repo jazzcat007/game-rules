@@ -1,0 +1,92 @@
+id: uno-express
+title: "UNO Express"
+publisher: Mattel
+edition: "FLK65 (2017)"
+players: {min: 2, max: 4}
+ages: 7
+components: [56 cards]
+sources:
+  - url: https://service.mattel.com/instruction_sheets/FLK65-Eng.pdf
+    kind: official
+    retrieved: 2026-10-04
+
+summary: >
+  A faster, smaller-deck version of UNO: a 56-card deck with only one of
+  each action card per color, a 5-card starting hand, and no Wild Draw Four
+  or Draw Two card. Match color, number or symbol to empty your hand first.
+
+deck:
+  - "40 number cards: 0-9 in each of blue, green, red, yellow."
+  - "4 Draw One cards, one per color."
+  - "4 Reverse cards, one per color."
+  - "4 Skip cards, one per color."
+  - "2 Wild cards."
+  - "2 Wild Draw Two cards."
+
+setup:
+  - Each player draws a card; the highest number deals (a symbol card counts as zero).
+  - The dealer shuffles and deals 5 cards to each player.
+  - Place the rest of the deck face down as the DRAW pile.
+  - Flip the top card to start the DISCARD pile. If it is an action card, follow its
+    start-of-game effect (see below).
+  - The player left of the dealer goes first.
+
+turn:
+  - Play a card from your hand that matches the top DISCARD card by number, color or
+    symbol, or play a Wild card.
+  - If you have no playable card, draw one from the DRAW pile. If it can be played you
+    may play it immediately; otherwise play passes on.
+  - "You may also choose not to play a playable card: draw instead, and if that
+     drawn card is playable you may play it, but no other card from your hand
+     this turn."
+  - "When you play your second-to-last card, call UNO. If you are caught without
+     having called it before the next player's turn starts, draw two cards."
+
+action_cards:
+  - "Draw One: the next player draws 1 card and loses their turn. Plays only on a
+     matching color or another Draw One. If turned up to start the game, the same
+     effect applies to the first player."
+  - "Reverse: play direction flips. Plays only on a matching color or another Reverse.
+     If turned up to start the game, the dealer goes first and play moves the other way."
+  - "Skip: the next player loses their turn. Plays only on a matching color or another
+     Skip. If turned up to start the game, the player left of the dealer is skipped."
+  - "Wild: choose the color that continues play, even if you have another playable
+     card. If turned up to start the game, the player left of the dealer chooses
+     the color."
+  - "Wild Draw Two: choose the color, and the next player draws 2 cards and loses
+     their turn. You may only play it if you hold no card matching the current
+     color (matching number or action cards are fine). If turned up to start the
+     game, return it to the deck and flip another card instead."
+  - "Challenging a Wild Draw Two: if you think the player had a matching color, you
+     may challenge. They must show their hand. Guilty: they draw the 2 cards instead
+     of you. Innocent: you draw those 2 plus 2 more (4 total)."
+
+end:
+  type: target
+  target: 250
+  counts: cumulative points across rounds
+scoring:
+  - "A round ends when a player empties their hand. They score the value of every
+     card left in opponents' hands."
+  - "Number cards: face value. Draw One, Reverse, Skip: 20 points each. Wild, Wild
+     Draw Two: 50 points each."
+  - "If the winning card was a Wild Draw Two, the next player still draws those 2
+     cards, which count toward the winner's score."
+  - "If the DRAW pile runs out before anyone goes out, reshuffle the DISCARD pile
+     (keeping its top card) and keep playing."
+  - "If nobody reaches 250 after a round, reshuffle and deal a new round."
+winning: "First player to 250 points wins."
+
+variants:
+  - name: Alternative scoring
+    rules:
+      - "Track a running total of each player's own hand value at the end of every
+         round instead. When any player reaches 250, whoever has the lowest total
+         wins."
+
+clarifications:
+  - q: How is UNO Express different from standard UNO?
+    a: >
+      Only 56 cards (one of each action card per color instead of two), a 5-card
+      starting hand instead of 7, no Wild Draw Four, and the target score is 250
+      instead of 500.

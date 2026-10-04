@@ -14,6 +14,7 @@ the wording of a rulebook can, so nothing here is copied from one.
 |---|---|---|
 | [drop-trivia.yaml](games/drop-trivia.yaml) | Drop Trivia (Trivial Pursuit) | Hasbro |
 | [finders-creepers.yaml](games/finders-creepers.yaml) | Finders Creepers | MGA Games |
+| [uno-express.yaml](games/uno-express.yaml) | UNO Express | Mattel |
 | [yahtzee.yaml](games/yahtzee.yaml) | Yahtzee | Hasbro |
 
 ## Format
